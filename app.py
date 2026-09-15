@@ -1,4 +1,3 @@
-model = genai.GenerativeModel("models/gemini-1.5-flash")
 import streamlit as st
 import google.generativeai as genai
 
@@ -19,8 +18,8 @@ if not api_key:
 # 3. Configure Gemini AI
 genai.configure(api_key=api_key)
 
-# 4. Initialize Model (Using explicit model string)
-model = genai.GenerativeModel("models/gemini-1.5-flash")
+# 4. Initialize Model
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 # 5. App UI Header
 st.title("🎓 Harshit AI Tutor")
